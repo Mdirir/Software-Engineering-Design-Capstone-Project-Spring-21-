@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  Overall Conatiner*/
+#slider {
+    position: relative;
+    /* margin: 20px auto 0 auto; */
+    border-radius: 4px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider ul.image_slider_ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    height: 100%;
+    list-style: none;
+}
+
+#slider ul.image_slider_ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+}
+
+#slider ul.image_slider_ul li .bgimage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: #333; */
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* -webkit-filter: blur(2px); */
+}
+
+/*  Indicators*/
+
+#slider .indicator_con {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+#slider .indicator_con ul.indicator {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#slider .indicator_con ul.indicator li {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    /* border: 1px solid #fff; */
+    display: inline-block;
+    margin: 0 3px;
+    border-radius: 1.5px;
+    transition: 800ms ease-in-out;
+}
+
+#slider .indicator_con ul.indicator li.active {
+    background-color: #F2B206;
+}
+
+/*  Buttons*/
+
+button.control_prev,
+button.control_next {
+    position: absolute;
+    /* top: 42%; */
+    z-index: 999;
+    display: block;
+    width: 7%;
+    height: 100%;
+    background: transparent;
+    /* background: rgba(0,0,0,0.1); */
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    /* opacity: 0.8; */
+    cursor: pointer;
+}
+
+button.control_prev:hover,
+button.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+    /* background-color: #fff; */
+    color: #fff;
+}
+
+button.control_prev {
+    border-radius: 0 4px 4px 0;
+}
+
+button.control_next {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}

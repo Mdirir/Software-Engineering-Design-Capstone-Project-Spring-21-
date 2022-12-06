@@ -1,0 +1,128 @@
+<?php 
+
+?>
+<style>
+.user-side{
+    width: auto;
+    height:auto;
+    margin-left: 410px;
+    display:flex;
+}
+
+.user-side li{
+     display:block;
+     padding: 10PX;
+     background-color: white;
+}
+ul{
+    height: 240px;
+}
+.user-side span{
+ background-color: inherit;
+}
+.user-side a{
+   padding:5px; 
+   background-color: inherit;
+   color:black;
+ }
+.user-side li:hover{
+    background-color: rgb(224, 224, 224);
+}
+.user-side .active{
+    background-color: #337ab7;
+}
+/**/
+.sideTable{
+    width: auto;
+    height:auto;
+    background-color: white;
+    margin-left: 20px;
+}
+.sideTable div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.sideTable h1,.sideTable p{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: white;
+}
+table{
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+th,td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+td{
+    padding:10px;
+}
+#confirm{
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+}
+
+</style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style-me.css">
+<body>
+
+<div class="user-side">
+    <ul style="border: 1px solid rgb(160, 160, 160);">
+                <li style="padding-left: 20px;" ><span class="fa fa-user" ></span> <a href="#" >Profile</a></li> 
+                <li style="padding-left: 20px;"><span class="fa fa-pencil" ></span> <a href="#" >Edit Account</a></li> 
+                <li style="padding-left: 20px;"><span class="fa fa-list" ></span> <a href="#" >My Orders</a></li> 
+                <li style="padding-left: 20px;"><span class="fa fa-key" ></span> <a href="#" >Change Password</a></li> 
+                <li style="padding-left: 20px;"><span class="fa fa-remove" ></span> <a href="#" >Delete Account</a></li>
+                <li style="padding-left: 20px;"><span class="fa fa-power-off" ></span> <a href="logout-me.php" >Logout</a></li>  
+              </ul>
+        <!-- side table-->
+    <article class="sideTable">
+        <div> 
+            <h1> Pay Offline</h1>
+            <p style="font-size: 20px;"> call us for processing.</p>
+            <p>if you have any qustions, feel free to <span><a href="#" style="color:midnightblue;">Contacts Us</a> </span>. Our Customer Service work 24/7 </p>
+            <hr>
+        </div>
+        <!--table-->
+            <table>
+                    <th>Bank Account No Details</th>
+                    <th>EVCPLUS Details</th>
+                    <th>Western Union Details</th>
+                    <tr>
+                        <td>Bank Name: Dahabshil <br>
+                            Acc No: 083478724 <br>
+                            Branch Name: Howlwadag
+                            Branch code: 452d</td>
+                            <td>Bank Name: Dahabshil
+                            Acc No: 083478724
+                            Branch Name: Howlwadag
+                            Branch code: 452d</td>
+                            <td>Bank Name: Dahabshil
+                            Acc No: 083478724
+                            Branch Name: Howlwadag
+                            Branch code: 452d</td>
+                    </tr>
+                    
+            </table>
+    </article>
+</div>
+
+<!---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function() {
+    $("li").click(function() {
+        $("li").removeClass("active");
+        $(this).addClass("active");
+    });
+    });
+ </script>
+</body>
